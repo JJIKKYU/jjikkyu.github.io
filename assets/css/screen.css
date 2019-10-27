@@ -902,5 +902,5 @@ iframe {
 
 #placement-bottom,
 #disqus-footer__wrapper {
-    display : hidden;
+    display : none;
 }
