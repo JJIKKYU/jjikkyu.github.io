@@ -899,3 +899,8 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+#placement-bottom,
+#disqus-footer__wrapper {
+    display : hidden;
+}
