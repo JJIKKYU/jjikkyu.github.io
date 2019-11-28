@@ -156,7 +156,7 @@ input[type="number"] {
 
 /* 국밥선택 */
 .gukbap-select {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100vw;
     height: 100vh;
 }
@@ -165,16 +165,13 @@ input[type="number"] {
     width: 20rem;
     height: 100%;
     z-index: 1;
-    position: fixed;
-    top: 0;
+    position: absolute;
     left: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     text-align: center;
     align-items: center;
     justify-content: center;
     padding-top: 350px;
-    display: hidden;
-    opacity: 0;
     
     transition: opacity ease-in-out .5s;
     /* float: left;
@@ -261,27 +258,47 @@ input[type="number"] {
     color: #00AD5D;
     font-size: 50px;
     font-weight: 600;
+    z-index: 200;
 }
 
-#gukbapImg {
+.gukbapImg {
     width: 50vw;
     height: 100%;
     position: absolute;
     right: 0;
-    /* background-image: url("../images/SDK.png"); */
-    background-color: #747474;
+    /* background-color: #747474; */
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     transition: width ease-in-out .5s;
     cursor: pointer;
+    z-index: 1;
 }
 
-#gukbapImg:hover {
+#sdkImg {
+    background-image: url("../images/SDK.png");
+}
+
+#pigImg {
+    background-image: url("../images/PIG.png");
+}
+
+#headImg {
+    background-image: url("../images/HEAD.png");
+}
+
+#seedImg {
+    background-image: url("../images/SEED.png");
+}
+
+
+
+.gukbapImg:hover {
     width: 85vw;
 }
 
-#gukbapImg .gukbapTipText {
+.gukbapImg .gukbapTipText {
     display: inline-block;
     color: white;
     position: absolute;
@@ -290,7 +307,7 @@ input[type="number"] {
     width: 250px;
 }
 
-#gukbapImg #border-left {
+.gukbapImg #border-left {
     margin-top: 7px;
     height: 90px;
     float: left;
@@ -298,11 +315,11 @@ input[type="number"] {
     padding-right: 10px;
 }
 
-#gukbapImg .gukbapTipText h1 {
+.gukbapImg .gukbapTipText h1 {
     font-size: 50px;
 }
 
-#gukbapImg .gukbapTipText h3 {
+.gukbapImg .gukbapTipText h3 {
     margin-bottom: -12px;
     padding-top: 5px;
     font-weight: 400;
@@ -354,6 +371,7 @@ input[type="number"] {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: -1;
     transition: all ease-in-out 1s;
     background-size: cover;
 }
@@ -365,8 +383,8 @@ input[type="number"] {
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
-    bottom: 0;
-    z-index: -1;
+    bottom: -50px;
+    z-index: -2;
     transition: all ease-in-out 1s;
     background-size: cover;
 }
@@ -378,7 +396,7 @@ input[type="number"] {
     background-image: url("../images/sdk_introduce_0.png");
     background-repeat: no-repeat;
     right: 30%;
-    bottom: 80px;
+    bottom: 0px;
     filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
     transition: all ease-in-out 1s;
 }
@@ -389,10 +407,14 @@ input[type="number"] {
     position: absolute;
     background-image: url("../images/sdk_introduce_1.png");
     background-repeat: no-repeat;
-    right: 75px;
-    bottom: 80px;
+    right: -300px;
+    bottom: 40px;
     filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
     transition: all ease-in-out 1s;
+}
+
+#sdk-introduce {
+    
 }
 
 #sdk-house {
@@ -405,6 +427,65 @@ input[type="number"] {
     bottom: 140px;
     filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
     transition: all ease-in-out 1s;
+}
+
+#sdk-sky {
+    position: absolute;
+    top: 0;
+    left : 0;
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
+    width: 100%;
+    height: 100%;
+}
+
+#sdk-sky #moon {
+    z-index: -1;
+    float: right;
+    margin-right: 80px;
+}
+
+#sdk-sky #star1 {
+    z-index: -1;
+    float: right;
+    margin-top: -50px;
+    margin-right: 80px;
+}
+
+#sdk-sky #star2 {
+    z-index: -1;
+    float: right;
+    margin-top: -50px;
+    margin-right: 80px;
+}
+
+#sdk-sky #star3 {
+    z-index: -1;
+    float: right;
+    margin-top: -50px;
+    margin-right: 120px;
+}
+
+#sdk-sky #star4 {
+    z-index: -1;
+    margin-top: -50px;
+    float: right;
+    margin-right: 80px;
+}
+
+#sdk-sky #star5 {
+    z-index: -1;
+    margin-top: -200px;
+    float: left;
+    margin-left: 80px;
+}
+
+#sdk-sky #star6 {
+    position: absolute;
+    left: -200px;
+    bottom: -150px;
+    width: 600px;
+    z-index: 10;
+    
 }
 
 /* 돼지국밥 */
@@ -441,6 +522,15 @@ input[type="number"] {
     left: 0;
 }
 
+#pig-map {
+    position: absolute;
+    z-index: 10;
+}
+
+#pig-map img{
+    height: 800px;
+}
+
 /* 소머리 국밥 */
 .head-titleBox {
     text-align: center;
@@ -449,6 +539,103 @@ input[type="number"] {
 
 #head-para {
     display: inline-block;
+}
+
+#head-interaction {
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#head-interaction #head {
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
+}
+
+#head-interaction #light1 {
+    position: absolute;
+    float: left;
+    top: -450px;
+    left: -480px;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+    transition-delay: 0.2s;
+}
+
+#head-interaction #light2 {
+    position: absolute;
+    float: right;
+    top: -450px;
+    right: -500px;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+    transition-delay: 0.4s;
+}
+
+#head-interaction #light3 {
+    position: absolute;
+    float: left;
+    top: 300px;
+    left: -480px;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+    transition-delay: 0.8s;
+}
+
+#head-interaction #light4 {
+    position: absolute;
+    float: right;
+    top: 300px;
+    right: -460px;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+    transition-delay: 0.6s;
+}
+
+#leftMoney {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    top: 0;
+}
+
+#leftMoney img{
+    display: block;
+    float: left;
+}
+
+#leftMoney img:nth-child(1) {
+    margin-top: -300px;
+}
+
+#leftMoney img:nth-child(2) {
+    margin-top: -180px;
+}
+
+#leftMoney img:nth-child(3) {
+}
+
+#leftMoney img:nth-child(4) {
+    margin-top: 80px;
+}
+
+#leftMoney img:nth-child(5) {
+    margin-top: 290px;
+}
+
+#rightMoney {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    top: 0;
+    right: 0;
+}
+
+#rightMoney img {
+    display: block;
+    float: right;
 }
 
 
