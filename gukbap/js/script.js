@@ -1,6 +1,8 @@
 resizable(document.getElementById('product'),44);
 resizable(document.getElementById('price'),28);
 calculator();
+headColorChange();
+fireColorChange();
 
 function calculator() {
     var sdk = 6000;
@@ -52,19 +54,36 @@ var Gukbap = {
     }
 }
 
-window.addEventListener('scroll', function SelectGukbap() {
+var scrollPercent;
+
+$(window).on('scroll', function(){
+    var s = $(window).scrollTop(),
+        d = $(document).height(),
+        c = $(window).height();
+  
+    scrollPercent = (s / (d - c)) * 100;
     
+    console.clear();
+    console.log(scrollPercent);
+  })
+
+var scrollYPos = 0;
+var changes = false;
+window.addEventListener('scroll', function SelectGukbap() {
+    // 첫번째 Bar
     var sdk = document.getElementById('navSDK');
     var pig = document.getElementById('navPIG');
     var head = document.getElementById('navHEAD');
     var seed = document.getElementById('navSEED');
     var gukbapBar = document.getElementById("gukbapBar");
 
-    var scrollYPos = 0;
+    scrollYPos = 0;
     var scrollYPosNomarlize = 0;
 
     scrollYPos = Math.round(window.scrollY);
-    scrollYPosNomarlize = Math.round(window.scrollY/20);
+    scrollYPosNomarlize = window.scrollY;
+
+    
 
     if (scrollYPos > 95 && scrollYPos < 1450)
     {
@@ -127,8 +146,91 @@ window.addEventListener('scroll', function SelectGukbap() {
         seed.style.color = "#FFFFFF";
         GukbapSelect = Gukbap.seed;
     }
-     console.log(scrollYPos);
-    // console.log(GukbapSelect);
+
+    // 두번째 Bar
+    var nav1 = document.getElementById("nav1");
+    var nav2 = document.getElementById("nav2");
+    var nav3 = document.getElementById("nav3");
+    var nav4 = document.getElementById("nav4");
+    var verticalLine = document.getElementById("gukbapMakeVerticalLine");
+    var gukbapMakeBar = document.getElementById("gukbapMakeBar");
+    var shadow = document.getElementById("resultShadow");
+    var resultFrom = document.getElementById("seasoning-plate");
+    var resultTo = document.getElementById("myGukbap");
+    var resultBack = document.getElementById("seasoningContainer");
+
+    if (scrollYPos > 7800 && scrollYPos < 9000){
+        // 나머지 리스트 컬러 초기화
+        verticalLine.style.border = "1px solid white";
+        nav2.style.backgroundColor = "#FFFFFF";
+        nav2.style.color = "#747474";
+        nav3.style.backgroundColor = "#FFFFFF";
+        nav3.style.color = "#747474";
+        nav4.style.backgroundColor = "#FFFFFF";
+        nav4.style.color = "#747474";
+
+        console.log("사골우리기 단계");
+        nav1.style.backgroundColor = "#00AD5D";
+        nav1.style.color = "#FFFFFF";
+    }
+    else if(scrollYPos >= 9000 && scrollYPos < 11000) {
+        // 나머지 리스트 컬러 초기화
+        verticalLine.style.border = "1px solid #999999";
+        nav1.style.backgroundColor = "#FFFFFF";
+        nav1.style.color = "#747474";
+        nav3.style.backgroundColor = "#FFFFFF";
+        nav3.style.color = "#747474";
+        nav4.style.backgroundColor = "#FFFFFF";
+        nav4.style.color = "#747474";
+
+        console.log("사골우리기 단계");
+        nav2.style.backgroundColor = "#00AD5D";
+        nav2.style.color = "#FFFFFF";
+    }
+    else if(scrollYPos >= 11000 && scrollYPos < 12500) {
+        // 나머지 리스트 컬러 초기화
+        verticalLine.style.border = "1px solid #999999";
+        nav1.style.backgroundColor = "#FFFFFF";
+        nav1.style.color = "#747474";
+        nav2.style.backgroundColor = "#FFFFFF";
+        nav2.style.color = "#747474";
+        nav4.style.backgroundColor = "#FFFFFF";
+        nav4.style.color = "#747474";
+
+        console.log("사골우리기 단계");
+        nav3.style.backgroundColor = "#00AD5D";
+        nav3.style.color = "#FFFFFF";
+    }
+    else if(scrollYPos >= 12500 && scrollYPos < 13000) {
+        // 나머지 리스트 컬러 초기화
+        verticalLine.style.border = "1px solid white";
+        nav1.style.backgroundColor = "#FFFFFF";
+        nav1.style.color = "#747474";
+        nav2.style.backgroundColor = "#FFFFFF";
+        nav2.style.color = "#747474";
+        nav3.style.backgroundColor = "#FFFFFF";
+        nav3.style.color = "#747474";
+
+        console.log("사골우리기 단계");
+        nav4.style.backgroundColor = "#00AD5D";
+        nav4.style.color = "#FFFFFF";
+    } else if (scrollYPos >= 13000) {
+        gukbapMakeBar.style.opacity = 0;
+        shadow.style.opacity = 1;
+    }
+
+    if (scrollYPos < 13000)
+    {
+        shadow.style.opacity = 0;
+    }
+
+    if (scrollYPos > 11300 && !changes) {
+        var gukbap = document.getElementById("seasoning-plate");
+        gukbap.style.animation = "Gukbap 1s";
+        changes = true;
+    }
+
+    console.log(scrollYPosNomarlize);
 
     sdkIntroduceAnimation(scrollYPos);
 });
@@ -164,28 +266,77 @@ function gukbapSelectClick(inputGukbap) {
     console.log("현재 GukbapSelect = " + GukbapSelect);
 }
 
-function sdkIntroduceAnimation(scrollYPos) {
+// 소머리 인터랙션
+function headColorChange() {
+    var change = true;
+
+setInterval(function() {
+    var head = document.getElementById("head");
     var light1 = document.getElementById("light1");
     var light2 = document.getElementById("light2");
     var light3 = document.getElementById("light3");
     var light4 = document.getElementById("light4");
 
-    if (scrollYPos >= 6400 && scrollYPos < 7400) {
-        light1.style.opacity = 1;
-        light2.style.opacity = 1;
-        light3.style.opacity = 1;
-        light4.style.opacity = 1;
-    }
-    else if (scrollYPos >= 7400){
-        light1.style.opacity = 0;
-        light2.style.opacity = 0;
-        light3.style.opacity = 0;
-        light4.style.opacity = 1;
-    }
-    else {
+    if (change && scrollYPos >= 6000 && scrollYPos < 7000) {
+        head.src = "images/head_introduce_0_changer.png"
         light1.style.opacity = 0;
         light2.style.opacity = 0;
         light3.style.opacity = 0;
         light4.style.opacity = 0;
+        change = false;
+    }
+    else if (change == false && scrollYPos >= 6000 && scrollYPos < 7000){
+        head.src = "images/head_introduce_0.png"
+        light1.style.opacity = 1;
+        light2.style.opacity = 1;
+        light3.style.opacity = 1;
+        light4.style.opacity = 1;
+        change = true;
+    }
+}, 1000);
+}
+
+// 사골 끓이기 인터랙션
+function fireColorChange() {
+    var change = true;
+
+setInterval(function() {
+    var fire = document.getElementById("fire");
+
+    if (change && scrollYPos >= 7500 && scrollYPos < 9500) {
+        fire.src = "images/make_1_after.png"
+        change = false;
+    }
+    else if (change == false && scrollYPos >= 7500 && scrollYPos < 9500){
+        fire.src = "images/make_1.png"
+        change = true;
+    }
+}, 1500);
+}
+
+
+function sdkIntroduceAnimation(scrollYPos) {
+    var map = document.getElementById("pig-map");
+    map.style.backgroundImage = "../images/pig_introduce_1.png";
+    // 돼지국밥 소개
+    if (scrollYPos > 4800) {
+        // map.style.backgroundImage = "url('images/pig_introduce_1.png')";
+    }
+    else {
+        // map.style.backgroundImage = "url('images/pig_introduce_1_before.png')";
+    }
+
+
+    // 소머리국밥
+    var light1 = document.getElementById("light1");
+    var light2 = document.getElementById("light2");
+    var light3 = document.getElementById("light3");
+    var light4 = document.getElementById("light4");
+
+    if (scrollYPos >= 7000){
+        light1.style.opacity = 0;
+        light2.style.opacity = 0;
+        light3.style.opacity = 0;
+        light4.style.opacity = 1;    
     }
 }

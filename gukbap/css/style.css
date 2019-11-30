@@ -11,7 +11,7 @@
 }
 
 body {
-    width: 100%;
+    width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -109,7 +109,17 @@ a {
     font-size: 55px;
     font-weight: 600;
     color : #FFC854;
-    /* border-bottom: 4px solid #FFC854; */
+    border-bottom: 4px solid #FFC854;
+    transition: color ease-in-out .5s;
+}
+
+.title #priceWon {
+    outline: none;
+    border: none;
+    font-size: 55px;
+    font-weight: 600;
+    color : #FFC854;
+    border-bottom: 4px solid #FFC854;
     transition: color ease-in-out .5s;
 }
 
@@ -130,12 +140,16 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 input[type="number"] {
     -moz-appearance: textfield;
 }
+#product:hover {
+    color: #00AD5D;
+}
 
-#product:hover,
+#price:hover + #priceWon,
 #price:hover {
     color: #00AD5D;
 }
 
+/*
 #gukbap {
     width: 100vw;
     height: 100vh;
@@ -143,15 +157,32 @@ input[type="number"] {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    /* animation: introGukbap 2s; */
+    animation: introGukbap 2s;
     transition: all ease-in-out 2s;
     right: -65%;
+    transform: rotateZ(30deg);
     overflow-x: hidden;
+}
+*/
+
+#titleGukbapImg {
+    position: absolute;
+    right: -20%;
+    height: 100vh;
+    transition: all ease-in-out 2s;
+    animation: introGukbap 2s;
+    transform: rotateZ(-120deg);
 }
 
 @keyframes introGukbap {
-    from {right : -100%;}
-    to {right : -50%;}
+    from {
+        right : -60%;
+        transform: rotateZ(0);
+    }
+    to {
+        right : -20%;
+        transform: rotateZ(-120deg);
+    }
 }
 
 /* 국밥선택 */
@@ -161,7 +192,7 @@ input[type="number"] {
     height: 100vh;
 }
 
-#gukbapBar {
+.gukbapBar {
     width: 20rem;
     height: 100%;
     z-index: 1;
@@ -182,11 +213,11 @@ input[type="number"] {
      */
 }
 
-#gukbapBar ul {
+.gukbapBar ul {
     display: inline-block;;
 }
 
-#gukbapBar ul li {
+.gukbapBar ul li {
     font-size: 16px;    
     color: #747474;
     font-weight: 500;
@@ -258,7 +289,6 @@ input[type="number"] {
     color: #00AD5D;
     font-size: 50px;
     font-weight: 600;
-    z-index: 200;
 }
 
 .gukbapImg {
@@ -266,36 +296,225 @@ input[type="number"] {
     height: 100%;
     position: absolute;
     right: 0;
-    /* background-color: #747474; */
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    transition: width ease-in-out .5s;
+    transition: ease-in-out 1s;
+    clip-path: url(#wave);
     cursor: pointer;
-    z-index: 1;
+    z-index: 10;
 }
+
+.imgHoverBG {
+    width: 50vw;
+    height: 100%;
+    right: 0;
+    background-color: #FFC854;
+    position: absolute;
+    transition: all ease-in-out 1.3s;
+    clip-path: url(#wave);
+    opacity: 0;
+    z-index: 9;
+    
+}
+
+/* 순대국밥 */
 
 #sdkImg {
-    background-image: url("../images/SDK.png");
+    
+    /* transition: all ease-in-out 2s; */
+    background:url("../images/SDK.png");
+    transition: ease-in-out 1.5s;
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+#sdkImg:hover {
+    clip-path: url(#wave);
+    background:linear-gradient(0deg,rgba(255,200,84,0.3),rgba(255,200,84,0.3)),url("../images/SDK.png");
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url("../images/SDK.png"); */
+}
+
+#sdkImg:hover > #gukbapTipText {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#sdkImg:hover > #gukbapTipText > #border-left{
+    opacity: 0;
+}
+
+.gukbapImg:hover + #sdkImgHover {
+    clip-path: url(#wave);
+    width: 86vw;
+    opacity: 1;
+}
+
+/* 돼지국밥 */
+
 
 #pigImg {
-    background-image: url("../images/PIG.png");
+    background: url("../images/PIG.png");
+    transition: ease-in-out 1.5s;
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
 }
+
+#pigImg:hover {
+    clip-path: url(#wave);
+    background:linear-gradient(0deg,rgba(255,200,84,0.3),rgba(255,200,84,0.3)),url("../images/PIG.png");
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url("../images/SDK.png"); */
+}
+
+#pigImg:hover > #gukbapTipTextPig {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#pigImg:hover > #gukbapTipTextPig > #border-left{
+    opacity: 0;
+}
+
+.gukbapImg:hover + #pigImgHover {
+    clip-path: url(#wave);
+    width: 86vw;
+    opacity: 1;
+}
+
+/* 소머리 국밥 */
 
 #headImg {
-    background-image: url("../images/HEAD.png");
+    background: url("../images/HEAD.png");
+    transition: ease-in-out 1.5s;
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
 }
 
+#headImg:hover {
+    clip-path: url(#wave);
+    background:linear-gradient(0deg,rgba(255,200,84,0.3),rgba(255,200,84,0.3)),url("../images/HEAD.png");
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url("../images/SDK.png"); */
+}
+
+#headImg:hover > #gukbapTipTextHead {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#headImg:hover > #gukbapTipTextHead > #border-left{
+    opacity: 0;
+}
+
+.gukbapImg:hover + #headImgHover {
+    clip-path: url(#wave);
+    width: 86vw;
+    opacity: 1;
+}
+
+/* 콩나물국밥 */
+
 #seedImg {
-    background-image: url("../images/SEED.png");
+    background: url("../images/SEED.png");
+    transition: ease-in-out 1.5s;
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+#seedImg:hover {
+    clip-path: url(#wave);
+    background:linear-gradient(0deg,rgba(255,200,84,0.3),rgba(255,200,84,0.3)),url("../images/SEED.png");
+    background-size: cover;
+    right: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url("../images/SDK.png"); */
+}
+
+#seedImg:hover > #gukbapTipTextSeed {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#seedImg:hover > #gukbapTipTextSeed > #border-left{
+    opacity: 0;
+}
+
+.gukbapImg:hover + #seedImgHover {
+    clip-path: url(#wave);
+    width: 86vw;
+    opacity: 1;
 }
 
 
 
 .gukbapImg:hover {
     width: 85vw;
+    
 }
 
 .gukbapImg .gukbapTipText {
@@ -303,7 +522,7 @@ input[type="number"] {
     color: white;
     position: absolute;
     bottom: 20px;
-    left: 25px;;
+    left: 100px;;
     width: 250px;
 }
 
@@ -324,13 +543,19 @@ input[type="number"] {
     padding-top: 5px;
     font-weight: 400;
     font-size: 24px;
+    margin-right: 20px;
 }
 
 /* 국밥 소개 */
+#introduce {
+    
+}
+
 .gukbap-introduce {
     width: 100%;
     height: 100vh;
     position: relative;
+
 }
 
 .sdk-title {
@@ -372,7 +597,7 @@ input[type="number"] {
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
     background-size: cover;
 }
 
@@ -385,7 +610,7 @@ input[type="number"] {
     left: 0;
     bottom: -50px;
     z-index: -2;
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
     background-size: cover;
 }
 
@@ -398,7 +623,7 @@ input[type="number"] {
     right: 30%;
     bottom: 0px;
     filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
 }
 
 #sdk-horse2 {
@@ -410,7 +635,7 @@ input[type="number"] {
     right: -300px;
     bottom: 40px;
     filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
 }
 
 #sdk-introduce {
@@ -426,7 +651,7 @@ input[type="number"] {
     left: 400px;
     bottom: 140px;
     filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
 }
 
 #sdk-sky {
@@ -525,10 +750,37 @@ input[type="number"] {
 #pig-map {
     position: absolute;
     z-index: 10;
+    width: 100%;
+    /* height: 800px; */
+    /* background-size: contain; */
+    /* background-image: url("../images/pig_introduce_1_before.png"); */
+    background-repeat: no-repeat;
+    transition: all ease-in-out 2s;
 }
 
-#pig-map img{
+
+#pig-map img:nth-child(1){
+    position: absolute;
     height: 800px;
+}
+
+#pig-map img:nth-child(2){
+    position: absolute;
+    height: 800px;
+}
+
+#pig-map img:nth-child(3){
+    position: absolute;
+    height: 250px;
+    margin-left: 170px;
+    margin-top: -100px;
+}
+
+#pig-map img:nth-child(4){
+    position: absolute;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: -100px;
 }
 
 /* 소머리 국밥 */
@@ -549,6 +801,7 @@ input[type="number"] {
 }
 
 #head-interaction #head {
+    transition: all ease-in-out 1s;
     filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
 }
 
@@ -558,8 +811,8 @@ input[type="number"] {
     top: -450px;
     left: -480px;
     opacity: 0;
-    transition: opacity ease-in-out .3s;
-    transition-delay: 0.2s;
+    transition: opacity ease-in-out .2s;
+    /* transition-delay: 0.2s; */
 }
 
 #head-interaction #light2 {
@@ -568,8 +821,8 @@ input[type="number"] {
     top: -450px;
     right: -500px;
     opacity: 0;
-    transition: opacity ease-in-out .3s;
-    transition-delay: 0.4s;
+    transition: opacity ease-in-out .2s;
+    /* transition-delay: 0.4s; */
 }
 
 #head-interaction #light3 {
@@ -578,8 +831,8 @@ input[type="number"] {
     top: 300px;
     left: -480px;
     opacity: 0;
-    transition: opacity ease-in-out .3s;
-    transition-delay: 0.8s;
+    transition: opacity ease-in-out .2s;
+    /* transition-delay: 0.8s; */
 }
 
 #head-interaction #light4 {
@@ -588,8 +841,8 @@ input[type="number"] {
     top: 300px;
     right: -460px;
     opacity: 0;
-    transition: opacity ease-in-out .3s;
-    transition-delay: 0.6s;
+    transition: opacity ease-in-out .2s;
+    /* transition-delay: 0.6s; */
 }
 
 #leftMoney {
@@ -607,10 +860,14 @@ input[type="number"] {
 
 #leftMoney img:nth-child(1) {
     margin-top: -300px;
+    margin-left: 150px;
+    opacity: 0.8;
 }
 
 #leftMoney img:nth-child(2) {
     margin-top: -180px;
+    margin-left: -30px;
+    opacity: 0.7;
 }
 
 #leftMoney img:nth-child(3) {
@@ -621,21 +878,54 @@ input[type="number"] {
 }
 
 #leftMoney img:nth-child(5) {
-    margin-top: 290px;
+    margin-top: 340px;
+    margin-left: -400px;
 }
 
 #rightMoney {
-    position: absolute;
+    position: relative;
     width: 50%;
     height: 100%;
-    text-align: right;
-    top: 0;
-    right: 0;
+    float: right;
+    margin-top: -400px;
 }
 
 #rightMoney img {
     display: block;
-    float: right;
+    position: absolute;
+    right: 0;
+}
+
+#rightMoney img:nth-child(1) {
+    margin-top: -340px;
+    opacity: 0.7;
+}
+
+#rightMoney img:nth-child(2) {
+    margin-top: -120px;
+    margin-right: -200px;
+}
+
+#rightMoney img:nth-child(3) {
+    margin-right: 100px;
+    margin-top: -140px;
+    opacity: 0.9;
+}
+
+#rightMoney img:nth-child(4) {
+    margin-top: 120px;
+    margin-right: 170px;    
+}
+
+#rightMoney img:nth-child(5) {
+    margin-top: 280px;
+    margin-right: -50px;
+}
+
+#rightMoney img:nth-child(6) {
+    margin-top: 300px;
+    margin-right: -500px;
+    opacity: 0.9;
 }
 
 
@@ -655,8 +945,18 @@ input[type="number"] {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
     left: 0;
+}
+
+#seed-bottomImg {
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    margin-right: 350px;
+    bottom: -80px;
+    transform: scale(0.5);
 }
 
 
@@ -664,6 +964,40 @@ input[type="number"] {
 
 
 /* 국밥만들기 */
+
+#gukbapMakeBar #nav1,
+#gukbapMakeBar #nav2,
+#gukbapMakeBar #nav3,
+#gukbapMakeBar #nav4 {
+    width: 110px;
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,.15);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: color ease-in-out .3s, background-color ease-in-out .3s;
+    cursor: pointer;;
+}
+
+#gukbapMakeBar ul li {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+
+#gukbapMakeBar #nav1 {
+    margin-top: 0px;
+    /* margin-top: 540px; */
+}
+
+#gukbapMakeVerticalLine {
+    border: 1px ;
+    border-color: white;
+    transition: 0.5s;
+}
+
 
 .gukbap-make {
     width: 100%;
@@ -697,10 +1031,59 @@ input[type="number"] {
     bottom: 0;
 }
 
+
+#gukbapMakePlate {
+    height: 500px;
+    width: 100%;
+    margin-top: 300px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+#plate {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 2;
+}
+
+#fire {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 9;
+    bottom: 120px;
+}
+
+#plateCover {
+    position:absolute;
+    left:50%;
+    top: 28px;
+    transform:translateX(-50%);
+    z-index: 4;
+}
+
+#bone1 {
+    position:absolute;
+    left:30%;
+    transform:rotate( -10deg );
+    top: -300px;
+    z-index: 3;
+}
+
+#bone2 {
+    position:absolute;
+    right:30%;
+    top: -300px;
+    transform:rotate( 20deg );
+    z-index: 3;
+}
+
 /* 국밥은 어쩌다 가성비 음식 */
 .why-titleBox {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 #why-para {
@@ -713,14 +1096,54 @@ input[type="number"] {
 
 /* 재료 페럴렉스 */
 #material {
-
+    width: 600px;
+    text-align: center;
+    display: block;
+    position: relative;
 }
+
+#materialPig1 {
+    position: absolute;
+    right: 0;
+    top: -200px;
+}
+
+#materialPig2 {
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+#materialPig3 {
+    position: absolute;
+    right: 0;
+    top: 250px;
+}
+
+#materialPig4 {
+    position: absolute;
+    left: 0;
+    top: 500px;
+}
+
+#makeResult {
+    width: 100%;
+    height: 730px;
+    top: 100px;
+    background-image: url("../images/material_pig_4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+}
+
+
 
 /* 국밥에 뚝배기를 사용하는 이유 */
 
 .plate-titleBox {
     text-align: center;
-    background-color: black;
+    padding-top: 250px;
 }
 
 #plate-para {
@@ -773,11 +1196,50 @@ input[type="number"] {
     color: white;
 }
 
+#seasoning-plate {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 50;
+    margin-left: 0px;
+    /* transition: margin-left ease-in-out 2s, rotateZ ease-in-out 2s; */
+    opacity: 1;
+    /* animation: Gukbap 2s; */
+}
+
+@keyframes Gukbap {
+    from {
+        margin-left: -1000px;
+        transform: rotateZ(-180deg);
+    }
+    to {
+        margin-left: 0px;
+        transform: rotateZ(-360deg);
+    }
+}
+
+
+
+#resultShadow {
+    position: absolute;
+    z-index: -2;
+    left: 280px;
+    top: -120px;
+    transform: scale(0.65);
+    opacity: 0;
+    transition: opacity ease-in-out .5s;
+}
+
+#seasoning-plate img:nth-child(1){
+    width: 650px;
+}
+
 /* 대령이요! */
 .complete-titleBox {
     color: white;
     float: left;
-    margin-top: 300px;
+    margin-top: 220px;
     z-index: 1;
 }
 
@@ -807,17 +1269,28 @@ input[type="number"] {
     width: 100%;
     height: 249px;
     position: absolute;
-    top: -100px;
+    top: -30px;
     left: 0;
 }
 
-.completeGroundBottom {
-    background-image: url("../images/gukbap-complete_1.png");
+#completeMask img {
+    z-index: 48;
+    position: absolute;
+}
+
+.completeGroundBottom2 {
+    background-color: white;
     width: 100%;
     height: 249px;
+    top: 10px;
     position: absolute;
-    bottom: -100px;
     left: 0;
+    /* z-index: 52; */
+}
+
+#completeMask {
+    height: 300px;
+    margin-top: -20px;
 }
 
 /* ending 국밥 하나만 기억해주세요 */
@@ -902,6 +1375,7 @@ footer {
     background-image: url("../images/footerBG.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: -200px;
 }
 
 footer .name {
