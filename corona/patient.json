@@ -1,6 +1,7 @@
 {
     "data": [
         {
+            "index": 1,
             "patientName": "첫 번째 확진자",
             "patientArea": "일산",
             "contact": "45",
@@ -8,6 +9,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 2,
             "patientName": "두 번째 확진자",
             "patientArea": "부천",
             "contact": "75",
@@ -15,6 +17,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 3,
             "patientName": "세 번째 확진자",
             "patientArea": "조사중",
             "contact": "98",
@@ -22,6 +25,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 4,
             "patientName": "네 번째 확진자",
             "patientArea": "조사중",
             "contact": "172",
@@ -29,6 +33,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 5,
             "patientName": "다섯 번째 확진자",
             "patientArea": "조사중",
             "contact": "29",
@@ -36,6 +41,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 6,
             "patientName": "여섯 번째 확진자",
             "patientArea": "조사중",
             "contact": "25",
@@ -43,6 +49,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 7,
             "patientName": "일곱 번째 확진자",
             "patientArea": "조사중",
             "contact": "21",
@@ -50,6 +57,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 8,
             "patientName": "여덟 번째 확진자",
             "patientArea": "조사중",
             "contact": "조사중",
@@ -57,6 +65,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 9,
             "patientName": "아홉 번째 확진자",
             "patientArea": "조사중",
             "contact": "조사중",
@@ -64,6 +73,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 10,
             "patientName": "열 번째 확진자",
             "patientArea": "조사중",
             "contact": "조사중",
@@ -71,6 +81,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 11,
             "patientName": "열 한번째 확진자",
             "patientArea": "조사중",
             "contact": "조사중",
@@ -78,6 +89,7 @@
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
+            "index": 12,
             "patientName": "열 두번째 확진자",
             "patientArea": "부천",
             "contact": "조사중",
