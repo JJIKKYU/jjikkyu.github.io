@@ -3,84 +3,84 @@
         {
             "patientName": "첫 번째 확진자",
             "patientArea": "일산",
-            "Contact": "45",
+            "contact": "45",
             "description": "중국인 35세 여자로 1월 19일에 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 20일로 접촉자는 약 45명으로 인천의료원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "두 번째 확진자",
             "patientArea": "부천",
-            "Contact": "75",
+            "contact": "75",
             "description": "한국인 55세 남자로 1월 22일에 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 24일로 접촉자는 약 75명으로 국립중앙의료원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "세 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "98",
+            "contact": "98",
             "description": "한국인 54세 남자로 1월 26일 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 26일로 접촉자는 약 98명으로 명지병원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "네 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "172",
+            "contact": "172",
             "description": "한국인 55세 남자로, 1월 20일 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 27일로 접촉자는 약 172명으로 분당 서울대병원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "다섯 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "29",
+            "contact": "29",
             "description": "한국인 33세 남자로 1월 24일에 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 30일로 접촉자는 약 29명으로 서울의료원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "여섯 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "25",
+            "contact": "25",
             "description": "한국인 55세 남자로 우한시 방문 이력이 없다. 확진 날짜는 1월 30일로 접촉자는 약 25명으로 서울대병원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "일곱 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "21",
+            "contact": "21",
             "description": "한국인 28세 남자로 우한시 방문 이력이 없다. 확진 날짜는 1월 30일로 접촉자는 약 21명으로 서울의료원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "여덟 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "조사중",
+            "contact": "조사중",
             "description": "한국인 62세 여자로 1월23일에 입국해 우한시 방문이력이 있다. 확진 날짜는 1월 31일로 접촉자는 현재 조사중이며 원광대병원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "아홉 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "조사중",
+            "contact": "조사중",
             "description": "한국인 28세 여자로 우한시 방문 이력이 없다. 확진 날짜는 1월 31일로 접촉자는 현재 조사중이며 서울의료원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "열 번째 확진자",
             "patientArea": "조사중",
-            "Contact": "조사중",
+            "contact": "조사중",
             "description": "한국인 52세 여자로 우한시 방문 이력이 없다. 확진 날짜는 1월 31일로 접촉자는 현재 조사중이며 서울대병원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "열 한번째 확진자",
             "patientArea": "조사중",
-            "Contact": "조사중",
+            "contact": "조사중",
             "description": "한국인 25세 남자로 우한시 방문 이력이 없다. 확진 날짜는 1월 31일로 접촉자는 현재 조사중이며 서울대병원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "열 두번째 확진자",
             "patientArea": "부천",
-            "Contact": "조사중",
+            "contact": "조사중",
             "description": "중국인 48세 남자로 우한시 방문 이력이 없다. 확진 날짜는 2월 1일로 접촉자는 현재 조사중이며 분당서울대병원에서 치료받고 있다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         }
