@@ -3,12 +3,18 @@
         {
             "patientName": "첫 번째 확진자",
             "patientArea": "일산",
-            "description": "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed.",
+            "description": "누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 대법원에 대법관을 둔다. 다만, 법률이 정하는 바에 의하여 대법관이 아닌 법관을 둘 수 있다. 국회는 국민의 보통·평등·직접·비밀선거에 의하여 선출된 국회의원으로 구성한다. 모든 국민은 법률이 정하는 바에 의하여 국가기관에 문서로 청원할 권리를 가진다.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         },
         {
             "patientName": "두 번째 확진자",
             "patientArea": "부천",
+            "description": "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed.",
+            "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
+        }
+        {
+            "patientName": "세 번째 확진자",
+            "patientArea": "테스트",
             "description": "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed.",
             "imageURL": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
         }
