@@ -3,7 +3,7 @@
         {
             "index": 1,
             "patientName": "첫 번째 확진자",
-            "patientArea": "일산",
+            "patientArea": "조사중",
             "contact": "45",
             "description": "중국인 35세 여자로 1월 19일에 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 20일로 접촉자는 약 45명으로 인천의료원에서 치료받고 있다.",
             "latlng": [
@@ -20,7 +20,7 @@
         {
             "index": 2,
             "patientName": "두 번째 확진자",
-            "patientArea": "부천",
+            "patientArea": "조사중",
             "contact": "75",
             "description": "한국인 55세 남자로 1월 22일에 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 24일로 접촉자는 약 75명으로 국립중앙의료원에서 치료받고 있다.",
             "latlng": [
@@ -185,7 +185,7 @@
         {
             "index": 12,
             "patientName": "열 두번째 확진자",
-            "patientArea": "부천",
+            "patientArea": "조사중",
             "contact": "조사중",
             "description": "중국인 48세 남자로 우한시 방문 이력이 없다. 확진 날짜는 2월 1일로 접촉자는 현재 조사중이며 분당서울대병원에서 치료받고 있다.",
             "latlng": [
@@ -198,12 +198,42 @@
                     "lng" : 126.82197
                 }
             ]
+        },
+        {
+            "index": 13,
+            "patientName": "열 세번째 확진자",
+            "patientArea": "조사중",
+            "contact": "조사중",
+            "description": "한국인 28세 남자로로 우한시에서 1월 31일 임시항공편으로 1차 귀국한 입국 교민이다. 입국교민 검사과정에서 확인 되어 국립중앙의료원에 격리조치 되었다.",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 14,
+            "patientName": "열 네번째 확진자",
+            "patientArea": "조사중",
+            "contact": "조사중",
+            "description": "중국인 48세 여자로 12번째 환자의 가족으로 자가격리 중이며, 역학조사가 진행중이다.",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 12,
+            "patientName": "열 다섯번째 확진자",
+            "patientArea": "조사중",
+            "contact": "조사중",
+            "description": "한국인 43세 남자로 1월 20일 우한시에서 입국하여 능동감시 중이던 대상자로, 2월 1일부터 경미한 감기증상을 호소해 실시한 검사 결과 확진되었다.",
+            "latlng": [
+                
+            ]
         }
 
     ],
     "patientData": [
         {
-            "patient": "12",
+            "patient": "15",
             "doubt": "359"
         }
     ]
