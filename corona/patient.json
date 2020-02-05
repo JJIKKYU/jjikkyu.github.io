@@ -262,13 +262,43 @@
             "latlng": [
                 
             ]
+        },
+        {
+            "index": 16,
+            "patientName": "열 여섯번째 확진자",
+            "patientArea": "조사중",
+            "contact": "조사중",
+            "description": "한국인 42세 여자로 태국 여행 후 1월 19일 입국하였으며 1월 25일 저녁부터 오한 등 증상이 있어 2월 3일 격리 조치 이후, 4일 확진 판정되었다.",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 17,
+            "patientName": "열 일곱번째 확진자",
+            "patientArea": "조사중",
+            "contact": "조사중",
+            "description": "조사중",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 18,
+            "patientName": "열 여덟번째 확진자",
+            "patientArea": "조사중",
+            "contact": "조사중",
+            "description": "조사중",
+            "latlng": [
+                
+            ]
         }
 
     ],
     "patientData": [
         {
-            "patient": "15",
-            "doubt": "414"
+            "patient": "18",
+            "doubt": "724"
         }
     ]
 }
