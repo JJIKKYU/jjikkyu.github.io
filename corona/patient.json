@@ -15,8 +15,8 @@
         },
         {
             "index": 2,
-            "patientName": "두 번째 확진자",
-            "patientArea": "조사중",
+            "patientName": "[퇴원] 두 번째 확진자",
+            "patientArea": "완치",
             "contact": "75",
             "description": "한국인 55세 남자로 1월 22일에 입국해 우한시를 방문한 이력이 있다. 확진 날짜는 1월 24일로 접촉자는 약 75명으로 국립중앙의료원에서 치료받고 있다.",
             "latlng": [
