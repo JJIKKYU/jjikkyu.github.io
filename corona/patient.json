@@ -325,12 +325,62 @@
                     "lng" : 126.921689
                 }
             ]
+        },
+        {
+            "index": 19,
+            "patientName": "열 아홉번째 확진자",
+            "patientArea": "조사중",
+            "contact": "조사중",
+            "description": "업데이트 예정입니다.",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 20,
+            "patientName": "스무번째 확진자",
+            "patientArea": "격리중",
+            "contact": "",
+            "description": "20번째 확진자 41세 여성 한국인은 15번째 확진자의 가족으로 자가 격리 중 시행한 검사결과, 2월 5일 양성으로 확인되어 국군수도병원에 격리조 치되었다.",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 21,
+            "patientName": "스물 한번째 확진자",
+            "patientArea": "격리중",
+            "contact": "",
+            "description": "21번째 확진자 59세 여성 한국인은 6번째 확진자의 접촉자로 자가 격리 중 시행한 검사 결과, 2월 6일 양성으로 확인되어 서울대병원에 격리조치 되었다.",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 22,
+            "patientName": "스물 두번째 확진자",
+            "patientArea": "격리중",
+            "contact": "",
+            "description": "22번째 확진자 46세 남성 한국인은 16번째 확진자의 가족으로 자가 격리 중 시행한 검사 결과, 2월 6일 양성으로 확인되어 조선대병원에 격리조치 되었다.",
+            "latlng": [
+                
+            ]
+        },
+        {
+            "index": 23,
+            "patientName": "스물 세번째 확진자",
+            "patientArea": "입원예정",
+            "contact": "조사중",
+            "description": "58세 여성 중국인은 관광 목적으로 1월 23일 입국하였으나, 발열이 확인되어 2월 6일 양성으로 확인되어 국가지정격리병상으로 입원할 예정이다.",
+            "latlng": [
+                
+            ]
         }
 
     ],
     "patientData": [
         {
-            "patient": "18",
+            "patient": "23",
             "doubt": "724"
         }
     ]
