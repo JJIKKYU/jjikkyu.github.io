@@ -20,7 +20,7 @@ url: 'protocol://domain'
 
 author: 개자이너                  # change to your full name
 
-avatar: /assets/profile/Profile.png   # support internet resources
+avatar: /assets/img/profile/Profile.png   # support internet resources
 
 github:
   username: jjikkyu             # change to your github username
