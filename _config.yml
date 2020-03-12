@@ -10,7 +10,7 @@
 
 title: 개자이너                          # the main title
 
-tagline: 개발과 디자인을 다 하려는 욕심 그득한 노예  # it will display as the sub-title
+tagline: 개발과 디자인을 다하고싶은 욕심그득한 노예.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   
@@ -20,7 +20,7 @@ url: 'protocol://domain'
 
 author: 개자이너                  # change to your full name
 
-avatar: /assets/img/profile/Profile.png   # support internet resources
+avatar: /assets/img/profile/profile.png   # support internet resources
 
 github:
   username: jjikkyu             # change to your github username
@@ -33,8 +33,11 @@ social:
   email: jjikkyu@naver.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/jjikkyu       # change to your github homepage
     # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
