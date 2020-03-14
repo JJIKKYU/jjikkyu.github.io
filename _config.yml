@@ -1,7 +1,7 @@
 title: 개자이너 – UX/UI Oriented Developer
 logo:  # you can add own logo.
 description: 디자인과 개발을 다하고 싶은 욕심 그득한 노예
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/jjikkyu.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
