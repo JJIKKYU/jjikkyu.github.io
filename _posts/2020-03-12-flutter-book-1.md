@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "처음 배우는 플러터 #0 - 서론"
+author: JJIKKYU
 date: 2020-03-12 18:40:00 +0900
-image:  '/assets/img/thumb/flutter_book_01.jpg'
 tags:   Flutter
 ---
 

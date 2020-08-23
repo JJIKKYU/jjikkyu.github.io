@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "게임개발일지 블로그 포스팅 세 번째 시도"
+author: JJIKKYU
 date: 2020-03-05 17:22:00 +0900
-image:  '/assets/img/thumb/game_01.jpg'
 tags:   UnrealEngine
 ---
 

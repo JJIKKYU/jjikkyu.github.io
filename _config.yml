@@ -1,13 +1,12 @@
-title: kakao 기술 블로그
-email: opensource@kakaocorp.com
+title: 개자이너
+email: jjikkyu@naver.com
 description: |
-  Connect Everything 새로운 연결, 새로운 세상.
-  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+  개자이너의 기술 블로그
 baseurl: ''
-url: 'http://tech.kakao.com'
+url: 'http://jjikkyu.github.io/'
 timezone: Asia/Seoul 
 
-repository: kakao/kakao.github.io
+repository: jjikkyu/jjikkyu.github.io
 
 permalink: /:year/:month/:day/:title/
 
@@ -65,4 +64,4 @@ twitter:
 google_plus:
   username: kakaodev
 github_url:
-  username: kakao
+  username: jjikkyu

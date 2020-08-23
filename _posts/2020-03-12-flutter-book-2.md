@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Stateful Widget과 Stateless Widget"
+author: JJIKKYU
 date: 2020-03-12 18:40:00 +0900
-image:  '/assets/img/thumb/flutter_book_02.jpg'
 tags:   Flutter
 ---
 

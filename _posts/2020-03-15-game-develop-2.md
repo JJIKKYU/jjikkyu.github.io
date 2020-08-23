@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "하드코딩으로 구현한 콤보 공격"
+author: JJIKKYU
 date: 2020-03-15 21:02:00 +0900
-image:  '/assets/img/thumb/game_02.jpg'
 tags:   게임개발일지
 ---
 
