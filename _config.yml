@@ -1,66 +1,68 @@
-title: 개자이너 – UX/UI Oriented Developer
-logo:  # you can add own logo.
-description: 디자인과 개발을 다하고 싶은 욕심 그득한 노예
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title: kakao 기술 블로그
+email: opensource@kakaocorp.com
+description: |
+  Connect Everything 새로운 연결, 새로운 세상.
+  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+baseurl: ''
+url: 'http://tech.kakao.com'
+timezone: Asia/Seoul 
 
+repository: kakao/kakao.github.io
 
-# Author Settings
-author:
-  name: 개자이너
-  image: '/assets/img/01.jpg'
-  job: UX/UI Oriented Developer
-  bio: 디자인과 개발을 다하고 싶은 욕심 그득한 노예
-  email: jjikkyu@naver.com
+permalink: /:year/:month/:day/:title/
 
+excerpt_separator: <!--more-->
 
-# Contact links
-contact:
-  - name: Twitter
-    link: https://twitter.com/
-  - name: Facebook
-    link: https://facebook.com/
-  - name: Instagram
-    link: https://instagram.com/jjikkyu_
-
-
-# Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
-
-
-# Google Analytics
-google-analytics: # add your identifier. For example UA-99631805-1.
-
-
-# Build settings
 markdown: kramdown
-permalink: pretty
-plugins:
-  - jekyll-sitemap
-  - jekyll/tagging
 
-# Pages Path
+krandown:
+  input: GFM
+  highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
 defaults:
   - scope:
-      path: '_pages'
+      path: ''
+      type: authors
     values:
-      permalink: /:basename:output_ext
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
 
-include:
-  - _pages
+exclude: [README.md, Gemfile, Gemfile.lock]
 
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag-page
-tag_permalink_style:  pretty
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-
-# Exclude from processing.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
+keep_files: [assets, files]
+github: [metadata]
+# iolo's custom
+author: opensource@kakaocorp.com
+image: '/assets/images/default_blog_cover.jpg'
+asset_url: /assets
+#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
+#asset_url: //t1.daumcdn.net/osa/blog/assets
+google_analytics:
+  ua: 'UA-72007721-1'
+facebook:
+  app_id: '1204347326263800'
+  username: nkakao
+twitter:
+  username: kakaodev
+google_plus:
+  username: kakaodev
+github_url:
+  username: kakao
